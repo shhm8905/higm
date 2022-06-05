@@ -1,0 +1,190 @@
+.home-courses {
+    background-color: #090f11;
+
+}
+
+.course-title {
+    padding-top: 60px;
+    font-size: 3rem;
+    text-align: center;
+    color: #eee;
+}
+
+.course-content {
+    display: flex;
+    padding: 30px 0 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.course-item {
+    position: relative;
+    width: 30%;
+    padding: 30px;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 10px;
+}
+
+.course-item>figure {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.course-item>figure>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.course-item>p>span {
+    color: #333;
+    font-weight: bold;
+}
+
+.course-teacher {
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
+.course-teacher>span {
+    font-weight: bold;
+}
+
+.course-name {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 20px 0;
+}
+
+.course-desc {
+    overflow: auto;
+    max-height: 170px;
+    margin-bottom: 20px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    background-color: #d7d7d7;
+    padding: 10px;
+}
+
+.start-btn {
+    display: block;
+    color: #eee;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #090f11;
+    width: 50%;
+    border-radius: 10px;
+    margin: 30px auto 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.delete-btn {
+    display: block;
+    color: #eee;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: #f74141ee;
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    transform: scale(0.96);
+}
+
+.edit-btn {
+    position: absolute;
+    left: 19px;
+    top: -20px;
+    padding: 10px;
+    color: #585858;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+}
+
+.start-btn:hover {
+    transform: scale(0.96);
+}
+
+.no-course {
+    text-align: center;
+    padding: 120px 0;
+}
+
+@media screen and (max-width:1300px) {
+    .course-item {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .course-item {
+        padding: 25px 15px 15px;
+    }
+
+    .course-title {
+        font-size: 2rem;
+    }
+
+    .no-course {
+        padding: 60px;
+    }
+
+    .no-course-title {
+        font-size: 2rem;
+    }
+
+    .course-item>figure {
+        height: 150px;
+    }
+
+    .start-btn {
+        width: 80%;
+        padding: .7rem;
+        margin: 15px auto 0;
+    }
+
+    .course-teacher {
+        padding: 10px 0;
+    }
+
+    .course-name {
+        padding: 5px 0;
+    }
+
+    .delete-btn {
+        padding: .7rem;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .course-content {
+        display: block;
+    }
+
+    .course-item {
+        width: 99%;
+        margin: 0 auto 20px;
+    }
+
+    .course-title {
+        padding-top: 30px;
+    }
+
+    .no-course-title {
+        font-size: 1.5rem;
+    }
+
+}

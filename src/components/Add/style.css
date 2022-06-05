@@ -1,0 +1,75 @@
+.d-n {
+    display: none;
+}
+
+.Add {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #020202cf;
+    z-index: 4;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #eee;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+.Add-editor {
+    overflow: auto;
+    max-height: 200px;
+    width: 99%;
+}
+
+.add-btn {
+    display: block;
+    color: #eee;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #090f11;
+    width: 50%;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    transform: scale(.96);
+}
+
+@media screen and (max-width:1333px) {
+    .Add-form {
+        width: 50%;
+    }
+
+}
+
+/*Styling for ipad */
+@media screen and (max-width:768px) {
+    .Add-form {
+        width: 80%;
+    }
+
+}
+
+/*Styling for ipad */
+@media screen and (max-width:500px) {
+    .Add-form {
+        width: 99%;
+    }
+
+}

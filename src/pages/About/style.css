@@ -1,0 +1,40 @@
+.about {
+    position: relative;
+    min-height: 92.7vh;
+}
+
+.about-header {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background-color: #000000d6;
+    color: #eee;
+    z-index: 20;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.about-header>p {
+    color: #a5a5a5;
+}
+
+@media screen and (max-width:768px) {
+    .about {
+        background-color: #000;
+    }
+
+    .about-header {
+        position: unset;
+        background-color: #000;
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid #eee;
+    }
+
+    .about-header>h1 {
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        color: #a3cbfc;
+    }
+}

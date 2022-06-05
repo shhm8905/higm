@@ -1,0 +1,214 @@
+.navbar {
+    position: relative;
+    padding: 5px 20px;
+    background-color: #333;
+    color: #eee;
+    border-bottom: 2px solid #eee;
+}
+
+.logo {
+    display: inline-block;
+    text-decoration: none;
+    color: #eee;
+    padding: 5px;
+    border: 1px #eee solid;
+    transition: color .5s ease-in-out;
+}
+
+.logo:hover {
+    color: var(--color);
+}
+
+.logo>h1 {
+    font-size: 2rem;
+}
+
+.box {
+    position: absolute;
+    right: 37px;
+    top: 19px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.label {
+    position: absolute;
+    right: 21px;
+    top: 3px;
+    width: 45px;
+    height: 45px;
+    background-image: url("./op.png");
+    background-size: cover;
+    cursor: pointer;
+    display: none;
+}
+
+.nav {
+    display: inline-block;
+    margin-left: 487px;
+}
+
+.li {
+    display: inline-block;
+    list-style: none;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #eee;
+    padding: 15px 5px;
+}
+
+.link.active {
+    color: var(--color);
+}
+
+.userName {
+    position: relative;
+}
+
+.userName>p {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #ca3eef;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.avatar {
+    position: absolute;
+    top: -8px;
+    left: -45px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.userName>span {
+    font-size: 1.3rem;
+    color: #8f8d8dbd;
+    margin-right: 22px;
+}
+
+.logout-btn {
+    font-size: 1.3rem;
+    margin-left: 20px;
+    padding: 8px;
+    background-color: #5959da;
+    color: #eee;
+    border-radius: 18px 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1225px) {
+    .nav {
+        margin-left: 100px;
+    }
+
+
+}
+
+@media screen and (max-width: 786px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav {
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+        display: none;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #000;
+        opacity: 0;
+        height: 0;
+    }
+
+    .li {
+        display: block;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 2px;
+    }
+
+    .logo:hover {
+        color: #54a0fd;
+    }
+
+    .logo>h1 {
+        font-size: 1.7rem;
+    }
+
+    .label {
+        display: block;
+    }
+
+    .box:checked~.nav {
+        display: block;
+        opacity: 1;
+        height: auto;
+    }
+
+    .box:checked~.label {
+        background-image: url("./close1.png");
+        background-size: cover;
+    }
+
+    .userName {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link {
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+
+    .link.active {
+        color: #54a0fd;
+    }
+
+    .logout-btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        background-color: #54a0fd;
+        color: #000;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .avatar {
+        position: unset;
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .logo>h1 {
+        font-size: 1.5rem;
+    }
+
+    .label {
+        top: 9px;
+        right: 6px;
+        width: 37px;
+        height: 37px;
+    }
+
+    .box {
+        top: 15px;
+        right: 30px;
+    }
+}

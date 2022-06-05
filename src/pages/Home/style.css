@@ -1,0 +1,129 @@
+.home-header {
+    height: 92.8vh;
+    width: 100%;
+    position: relative;
+}
+
+.home-header::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.422);
+}
+
+.home-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home-content {
+    color: #eee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.708);
+    border-radius: 10px;
+    z-index: 1;
+    padding: 2rem;
+}
+
+.home-title {
+    padding: 1.3rem;
+    text-align: center;
+    color: #eee;
+    font-size: 2.3rem;
+}
+
+.home-title>span {
+    border: 1px solid #eee;
+    padding: 10px;
+    color: #fff;
+}
+
+.home-desc {
+    text-align: center;
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 1.5rem;
+    color: rgb(154, 153, 153);
+    line-height: 1.5;
+}
+
+.home-contact {
+    display: block;
+    text-decoration: none;
+    color: #eee;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--bg-btn);
+    width: 30%;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-contact:hover {
+    transform: scale(0.96);
+}
+
+@media screen and (max-width:1300px) {
+    .home-content {
+        width: 70%;
+    }
+
+    .home-title {
+        line-height: 2;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .home-header {
+        height: 60vh;
+    }
+
+    .home-content {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .home-title {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .home-desc {
+        font-size: 1.1rem;
+        padding: 10px 0 30px;
+    }
+
+    .home-contact {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .home-header {
+        height: 50vh;
+    }
+
+    .home-content {
+        width: 99%;
+    }
+
+    .home-contact {
+        width: 60%;
+        padding: .8rem;
+    }
+
+    .home-desc {
+        padding: 0 0 30px;
+    }
+
+}

@@ -1,0 +1,45 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 92vh;
+    background-color: #e8e8e8;
+}
+
+.form {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    width: 40%;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.form-label,
+.form-inp {
+    display: block;
+}
+
+.form-label {
+    color: #ddd;
+}
+
+.form-inp {
+    padding: 15px;
+    width: 100%;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.send-btn {
+    display: block;
+    padding: 15px;
+    font-size: 1.3rem;
+    background-color: var(--bg-btn);
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 32px;
+    color: #eee;
+}

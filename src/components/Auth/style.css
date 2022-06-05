@@ -1,0 +1,151 @@
+.signup {
+    position: relative;
+    min-height: 92vh;
+    background-color: #eee;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 50px 30px;
+    background-color: #333;
+    border-radius: 20px;
+}
+
+.form-title {
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #eee;
+}
+
+.form-lb {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.607);
+}
+
+.form-inp {
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.s-btn {
+    padding: 15px;
+    font-size: 1.3rem;
+    background-color: var(--general-bg);
+    color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.s-btn:hover {
+    transform: scale(0.96);
+}
+
+.g-btn {
+    position: relative;
+    padding: 15px;
+    font-size: 1.3rem;
+    background-color: var(--general-bg);
+    color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.g-btn:hover {
+    transform: scale(0.96);
+}
+
+.g-content {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    width: 50px;
+    border: 1px solid #000;
+    border-radius: 10px 0 0 10px;
+}
+
+.g-icon {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.change-btn {
+    padding: 15px;
+    font-size: 1.3rem;
+    background-color: var(--general-bg);
+    color: #fff;
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.change-btn:hover {
+    transform: scale(0.96);
+}
+
+@media screen and (max-width:1400px) {
+    .form {
+        width: 50%;
+    }
+
+    .form-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .form {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .form-inp {
+        padding: 10px;
+    }
+
+    .g-btn,
+    .s-btn,
+    .change-btn,
+    .form-inp,
+    .send-btn {
+        margin-top: 7px;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .form {
+        width: 98%;
+    }
+
+    .g-btn,
+    .s-btn,
+    .change-btn,
+    .form-ip,
+    .form-lb {
+        font-size: 1.1rem;
+    }
+
+}

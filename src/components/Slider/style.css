@@ -1,0 +1,45 @@
+.items {
+    position: relative;
+    height: 92.4vh;
+    background-color: rgb(28, 42, 40);
+}
+
+.dn {
+    display: none;
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    animation: fade 1s ease-in-out;
+}
+
+.imgs {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .items {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .items {
+        height: 30vh;
+    }
+}
