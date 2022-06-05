@@ -8,9 +8,9 @@ const Form = () => {
     const form = useRef();
     const [isLoading, setLoading] = useState(false);
 
-    const ServiceId = process.env.REACT_APP_SERVICE_ID;
-    const TemplateId = process.env.REACT_APP_TEMPLATE_ID;
-    const PublicKey = process.env.REACT_APP_PUBLIC_KEY;
+    const ServiceId = process.env?.REACT_APP_SERVICE_ID;
+    const TemplateId = process.env?.REACT_APP_TEMPLATE_ID;
+    const PublicKey = process.env?.REACT_APP_PUBLIC_KEY;
 
     const sendEmail = (e) => {
         e.preventDefault();
