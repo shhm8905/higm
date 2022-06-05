@@ -8,10 +8,14 @@ const Form = () => {
     const form = useRef();
     const [isLoading, setLoading] = useState(false);
 
+    const ServiceId = process.env.REACT_APP_SERVICE_ID;
+    const TemplateId = process.env.REACT_APP_TEMPLATE_ID;
+    const PublicKey = process.env.REACT_APP_PUBLIC_KEY;
+
     const sendEmail = (e) => {
         e.preventDefault();
         setLoading(true);
-        emailjs.sendForm('service_h0eth8f', 'template_07ifwk3', form.current, 'user_dh0ZSsyleS5mIDZSFpFQk')
+        emailjs.sendForm(ServiceId, TemplateId, form.current, PublicKey)
             .then((result) => {
                 toast.success('Your email has been send');
                 setLoading(false);
