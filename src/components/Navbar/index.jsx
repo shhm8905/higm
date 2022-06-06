@@ -39,9 +39,13 @@ const Navbar = () => {
         if (isLogout) {
             router('/auth');
         } else {
-            dispatch(logout());
-            setLogout(true);
-            router('/');
+            localStorage.removeItem('user');
+            setTimeout(() => {
+
+                dispatch(logout());
+                setLogout(true);
+                router('/');
+            }, 50)
         }
     }
 

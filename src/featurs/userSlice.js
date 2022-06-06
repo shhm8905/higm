@@ -56,7 +56,6 @@ export const userSlice = createSlice({
             state.message = '';
         },
         logout: (state) => {
-            localStorage.removeItem('user');
             state.user = user ? user : null;
         }
     },
