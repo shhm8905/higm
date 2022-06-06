@@ -13,7 +13,7 @@ const Add = () => {
 
     useEffect(() => {
         if (isUpdate) {
-            setData((prevState) => ({ ...prevState, name: course.name, teacher: course.teacher, img: course.img }));
+            setData((prevState) => ({ ...prevState, name: course.name, teacher: course.teacher, img: course.img, _id: course._id }));
             setTimeout(() => {
                 setData((prevState) => ({ ...prevState, description: course.description }));
             }, 50)
