@@ -14,7 +14,7 @@ const initialState = {
 export const getVideos = createAsyncThunk('/getvideos', async (search, thunkAPI) => {
     try {
         const res = await API.get('/search', { params: { q: `Learn ${search}` } });
-        return res.data.items;
+        return await res.data.items;
     } catch (error) {
         const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString();
         return thunkAPI.rejectWithValue(message);
