@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "^34.1.0",
+    "@ckeditor/ckeditor5-build-classic": "^36.0.1",
     "@ckeditor/ckeditor5-react": "^5.0.2",
     "@emailjs/browser": "^3.6.2",
     "@reduxjs/toolkit": "^1.8.1",
